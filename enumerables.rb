@@ -7,13 +7,20 @@ def spicy_foods
     { name: 'Buffalo Wings', cuisine: 'American', heat_level: 3 },
     { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 }
   ]
+  
 end
 
 # given an array of spicy foods, **return an array of strings**
 # with the names of each spicy food
 def get_names(spicy_foods)
   # your code here
+  spicy_foods.map do |food| 
+    food[:name]
+  end
+
+ 
 end
+
 
 # given an array of spicy foods, **return an array of hashes** 
 # where the heat level of the food is greater than 5
